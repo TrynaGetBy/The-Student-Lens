@@ -3,24 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>The Student Lens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <nav class="nav-desktop">
-    <button class="nav-item active" onclick="goTo('home')" data-section="home">🏠 Home</button>
-    <button class="nav-item" onclick="goTo('articles')" data-section="articles">📚 Articles</button>
-    <button class="nav-item" onclick="goTo('create')" data-section="create">✍️ Create</button>
-    <button class="nav-item" onclick="goTo('map')" data-section="map">🌍 Map</button>
-  </nav>
+  <div class="header-content">
+    <div class="logo">The Student Lens</div>
+
+    <nav class="nav-desktop">
+      <button class="nav-item active" data-section="home">🏠 Home</button>
+      <button class="nav-item" data-section="articles">📚 Articles</button>
+      <button class="nav-item" data-section="create">✍️ Create</button>
+      <button class="nav-item" data-section="map">🌍 Map</button>
+      <button class="nav-item" data-section="about">ℹ️ About</button>
+    </nav>
+  </div>
 </header>
 
-<section id="home" class="active">Home content</section>
-<section id="articles">Articles content</section>
-<section id="create">Create content</section>
-<section id="map">Map content</section>
+<main>
+  <section id="home" class="active">Home content</section>
+  <section id="articles">Articles content</section>
+  <section id="create">Create content</section>
+  <section id="map">Map content</section>
+  <section id="about">About content</section>
+</main>
 
 <script src="app.js"></script>
 </body>
 </html>
+
