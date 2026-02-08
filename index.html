@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Student Lens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav-desktop">
+    <button class="nav-item active" onclick="goTo('home')" data-section="home">🏠 Home</button>
+    <button class="nav-item" onclick="goTo('articles')" data-section="articles">📚 Articles</button>
+    <button class="nav-item" onclick="goTo('create')" data-section="create">✍️ Create</button>
+    <button class="nav-item" onclick="goTo('map')" data-section="map">🌍 Map</button>
+  </nav>
+</header>
+
+<section id="home" class="active">Home content</section>
+<section id="articles">Articles content</section>
+<section id="create">Create content</section>
+<section id="map">Map content</section>
+
+<script src="app.js"></script>
+</body>
+</html>
